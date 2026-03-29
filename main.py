@@ -44,3 +44,11 @@ for epoch in range(2000):
 
 print("\nRésultat final :")
 print(y_pred.round())
+
+''' Explication du processus d’apprentissage
+
+Lors de la propagation avant, les données d’entrée passent à travers les couches du réseau, où elles sont transformées par des poids et des fonctions d’activation pour produire une sortie.
+L’erreur est ensuite calculée en comparant la prédiction du modèle avec la vraie valeur à l’aide d’une fonction de perte (ici l’erreur quadratique moyenne).
+Pendant la rétropropagation, le réseau calcule les gradients de l’erreur par rapport aux poids en remontant du résultat vers l’entrée.
+Ces gradients sont utilisés pour ajuster les poids afin de réduire l’erreur.
+Au fil des itérations, les poids s’améliorent et le modèle devient plus précis.'''
